@@ -279,15 +279,15 @@ Decimal('42.666667')
 ```
 
 #### 捨入(Rounding)規則
-	* `ROUNDING_CEILING`：朝著無窮大的方向
-	* `ROUND_DOWN`：無條件捨去
-	* `ROUND_FLOOR`：朝著負無窮大的方向
-	* 四捨六入
-		* `ROUND_HALF_DOWN`：五朝著接近零的方向
-		* `ROUND_HALF_EVEN`：五朝著最接近偶數的方向
-		* `ROUND_HALF_UP`：五朝著遠離零的方向
-	* `ROUND_UP`：無條件進位
-	* `ROUND_05UP`：捨去最後位數後，若為 0 或 5 則進位，其他捨位
+* `ROUNDING_CEILING`：朝著無窮大的方向
+* `ROUND_DOWN`：無條件捨去
+* `ROUND_FLOOR`：朝著負無窮大的方向
+* 四捨六入
+	* `ROUND_HALF_DOWN`：五朝著接近零的方向
+	* `ROUND_HALF_EVEN`：五朝著最接近偶數的方向
+	* `ROUND_HALF_UP`：五朝著遠離零的方向
+* `ROUND_UP`：無條件進位
+* `ROUND_05UP`：捨去最後位數後，若為 0 或 5 則進位，其他捨位
 ```py
 >>> getcontext().rounding
 'ROUND_HALF_EVEN' # 預設的捨入規則
